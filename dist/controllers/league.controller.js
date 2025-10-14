@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteLeague = exports.updateLeague = exports.createLeague = exports.getLeagueById = exports.getLeagues = void 0;
-const express_1 = require("express");
 const League_1 = __importDefault(require("../models/League"));
 // Obtener todas las ligas
 const getLeagues = async (req, res) => {
@@ -66,4 +65,3 @@ const deleteLeague = async (req, res) => {
     }
 };
 exports.deleteLeague = deleteLeague;
-//# sourceMappingURL=league.controller.js.map

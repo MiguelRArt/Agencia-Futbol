@@ -7,4 +7,3 @@ const leagueSchema = new mongoose_1.Schema({
     season: { type: String, required: true },
 }, { timestamps: true });
 exports.default = (0, mongoose_1.model)("League", leagueSchema);
-//# sourceMappingURL=League.js.map

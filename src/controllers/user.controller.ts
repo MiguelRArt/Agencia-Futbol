@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import User from "../models/User";
 import { generateToken } from "../utils/jwt";
+import jwt from "jsonwebtoken";
 
 // Registro de usuario
 export const registerUser = async (req: Request, res: Response) => {
@@ -29,7 +30,7 @@ export const loginUser = async (req: Request, res: Response) => {
     const isMatch = await user.comparePassword(password);
     if (!isMatch) return res.status(401).json({ message: "Contraseña incorrecta" });
 
-    const token = generateToken(user._id.toString());
+    const token = generateToken(user.id.toString());
 
     res.json({
       message: "Inicio de sesión exitoso",

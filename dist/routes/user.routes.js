@@ -8,4 +8,3 @@ router.post("/register", user_controller_1.registerUser);
 router.post("/login", user_controller_1.loginUser);
 router.get("/", auth_1.authMiddleware, user_controller_1.getUsers);
 exports.default = router;
-//# sourceMappingURL=user.routes.js.map

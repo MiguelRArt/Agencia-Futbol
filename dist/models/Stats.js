@@ -13,4 +13,3 @@ const StatSchema = new mongoose_1.Schema({
     createdAt: { type: Date, default: Date.now },
 });
 exports.default = (0, mongoose_1.model)("Stat", StatSchema);
-//# sourceMappingURL=Stats.js.map

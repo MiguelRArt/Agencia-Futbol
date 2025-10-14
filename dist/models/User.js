@@ -24,4 +24,3 @@ UserSchema.methods.comparePassword = async function (password) {
     return bcryptjs_1.default.compare(password, this.password);
 };
 exports.default = (0, mongoose_1.model)("User", UserSchema);
-//# sourceMappingURL=User.js.map

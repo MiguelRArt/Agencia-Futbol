@@ -8,4 +8,3 @@ router.get("/", history_controller_1.getHistories);
 router.get("/player/:playerId", history_controller_1.getHistoryByPlayer);
 router.get("/match/:matchId", history_controller_1.getHistoryByMatch);
 exports.default = router;
-//# sourceMappingURL=history.routes.js.map

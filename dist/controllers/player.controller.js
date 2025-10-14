@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deletePlayer = exports.updatePlayer = exports.getPlayerById = exports.getPlayers = exports.createPlayer = void 0;
-const express_1 = require("express");
 const Player_1 = __importDefault(require("../models/Player"));
 // Crear jugador
 const createPlayer = async (req, res) => {
@@ -67,4 +66,3 @@ const deletePlayer = async (req, res) => {
     }
 };
 exports.deletePlayer = deletePlayer;
-//# sourceMappingURL=player.controller.js.map

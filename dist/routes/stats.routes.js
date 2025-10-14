@@ -7,4 +7,3 @@ router.post("/", stats_controller_1.createStat);
 router.get("/", stats_controller_1.getStats);
 router.get("/match/:matchId", stats_controller_1.getStatsByMatch);
 exports.default = router;
-//# sourceMappingURL=stats.routes.js.map

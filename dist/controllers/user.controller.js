@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getUsers = exports.loginUser = exports.registerUser = void 0;
-const express_1 = require("express");
 const User_1 = __importDefault(require("../models/User"));
 const jwt_1 = require("../utils/jwt");
 // Registro de usuario
@@ -35,7 +34,7 @@ const loginUser = async (req, res) => {
         const isMatch = await user.comparePassword(password);
         if (!isMatch)
             return res.status(401).json({ message: "Contraseña incorrecta" });
-        const token = (0, jwt_1.generateToken)(user._id.toString());
+        const token = (0, jwt_1.generateToken)(user.id.toString());
         res.json({
             message: "Inicio de sesión exitoso",
             user: { id: user._id, username: user.username, role: user.role },
@@ -58,4 +57,3 @@ const getUsers = async (req, res) => {
     }
 };
 exports.getUsers = getUsers;
-//# sourceMappingURL=user.controller.js.map

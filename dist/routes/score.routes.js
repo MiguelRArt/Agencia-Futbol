@@ -6,4 +6,3 @@ const router = (0, express_1.Router)();
 router.post("/", score_controller_1.createScore);
 router.get("/", score_controller_1.getScores);
 exports.default = router;
-//# sourceMappingURL=score.routes.js.map

@@ -9,4 +9,3 @@ router.get("/:id", player_controller_1.getPlayerById);
 router.put("/:id", player_controller_1.updatePlayer);
 router.delete("/:id", player_controller_1.deletePlayer);
 exports.default = router;
-//# sourceMappingURL=player.routes.js.map

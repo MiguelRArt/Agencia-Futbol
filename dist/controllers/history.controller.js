@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getHistoryByMatch = exports.getHistoryByPlayer = exports.getHistories = exports.createHistory = void 0;
-const express_1 = require("express");
 const History_1 = __importDefault(require("../models/History"));
 // Crear registro histórico
 const createHistory = async (req, res) => {
@@ -50,4 +49,3 @@ const getHistoryByMatch = async (req, res) => {
     }
 };
 exports.getHistoryByMatch = getHistoryByMatch;
-//# sourceMappingURL=history.controller.js.map

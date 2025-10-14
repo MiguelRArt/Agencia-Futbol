@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteMatch = exports.updateMatch = exports.createMatch = exports.getMatchById = exports.getMatches = void 0;
-const express_1 = require("express");
 const Matchs_1 = __importDefault(require("../models/Matchs"));
 // Obtener todos los partidos
 const getMatches = async (req, res) => {
@@ -76,4 +75,3 @@ const deleteMatch = async (req, res) => {
     }
 };
 exports.deleteMatch = deleteMatch;
-//# sourceMappingURL=match.controller.js.map

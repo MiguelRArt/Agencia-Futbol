@@ -9,4 +9,3 @@ router.post("/", match_controller_1.createMatch);
 router.put("/:id", match_controller_1.updateMatch);
 router.delete("/:id", match_controller_1.deleteMatch);
 exports.default = router;
-//# sourceMappingURL=match.routes.js.map

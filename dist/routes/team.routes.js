@@ -9,4 +9,3 @@ router.post("/", team_controller_1.createTeam);
 router.put("/:id", team_controller_1.updateTeam);
 router.delete("/:id", team_controller_1.deleteTeam);
 exports.default = router;
-//# sourceMappingURL=team.routes.js.map

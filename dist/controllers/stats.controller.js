@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getStatsByMatch = exports.getStats = exports.createStat = void 0;
-const express_1 = require("express");
 const Stats_1 = __importDefault(require("../models/Stats"));
 // Crear estadística
 const createStat = async (req, res) => {
@@ -39,4 +38,3 @@ const getStatsByMatch = async (req, res) => {
     }
 };
 exports.getStatsByMatch = getStatsByMatch;
-//# sourceMappingURL=stats.controller.js.map

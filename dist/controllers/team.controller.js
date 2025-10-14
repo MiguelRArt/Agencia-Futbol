@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteTeam = exports.updateTeam = exports.createTeam = exports.getTeamById = exports.getTeams = void 0;
-const express_1 = require("express");
 const Teams_1 = __importDefault(require("../models/Teams"));
 // Obtener todos los equipos
 const getTeams = async (req, res) => {
@@ -68,4 +67,3 @@ const deleteTeam = async (req, res) => {
     }
 };
 exports.deleteTeam = deleteTeam;
-//# sourceMappingURL=team.controller.js.map

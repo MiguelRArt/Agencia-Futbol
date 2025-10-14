@@ -9,4 +9,3 @@ router.post("/", league_controller_1.createLeague);
 router.put("/:id", league_controller_1.updateLeague);
 router.delete("/:id", league_controller_1.deleteLeague);
 exports.default = router;
-//# sourceMappingURL=league.routes.js.map
