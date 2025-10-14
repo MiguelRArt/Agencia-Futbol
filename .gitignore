@@ -1,4 +1,8 @@
+Cambio de directriz de build
+
 # === Node & TypeScript ===
+
+#
 node_modules/
 dist/
 build/
