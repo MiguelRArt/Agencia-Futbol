@@ -1,5 +1,6 @@
-import express from "express";
+// @ts-ignore
 import cors from "cors";
+import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/database";
 import leagueRoutes from "./routes/league.routes";
