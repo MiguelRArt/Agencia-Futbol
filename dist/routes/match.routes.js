@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const match_controller_1 = require("../controllers/match.controller");
+const router = (0, express_1.Router)();
+router.get("/", match_controller_1.getMatches);
+router.get("/:id", match_controller_1.getMatchById);
+router.post("/", match_controller_1.createMatch);
+router.put("/:id", match_controller_1.updateMatch);
+router.delete("/:id", match_controller_1.deleteMatch);
+exports.default = router;
+//# sourceMappingURL=match.routes.js.map
