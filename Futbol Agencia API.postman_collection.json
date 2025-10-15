@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "5b1bb689-13bd-4621-8cac-c8dd368dbac6",
+		"name": "Futbol Agencia API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35154738"
+	},
+	"item": [
+		{
+			"name": "Endpoints Liga",
+			"item": [
+				{
+					"name": "Crear Liga",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Liga Profesional Colombiana\",\r\n  \"country\": \"Colombia\",\r\n  \"season\": \"2025\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/leagues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"leagues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todas las Ligas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/leagues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"leagues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Liga por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/leagues/68edd25275a7c0fe106ef9c9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"leagues",
+								"68edd25275a7c0fe106ef9c9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar una Liga",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Liga Colombiana BetPlay\",\r\n  \"season\": \"2026\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/leagues/68edd25275a7c0fe106ef9c9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"leagues",
+								"68edd25275a7c0fe106ef9c9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una Liga por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/leagues/68edd25275a7c0fe106ef9c9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"leagues",
+								"68edd25275a7c0fe106ef9c9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Equipos",
+			"item": [
+				{
+					"name": "Crear un Equipo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Millonarios F.C\",\r\n  \"city\": \"Bogota\",\r\n  \"founded\": 1948,\r\n  \"stadium\": \"El Campin\",\r\n  \"league\": \"68edd53983d3fb55e0cbbd37\",\r\n  \"coach\": \"Hernan Torres\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Todos los Equipos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Equipo por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/teams/68edd56583d3fb55e0cbbd39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"68edd56583d3fb55e0cbbd39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un Equipo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"coach\": \"Nuevo Entrenador\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/68edd56583d3fb55e0cbbd39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"68edd56583d3fb55e0cbbd39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un Equipo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/teams/68edd4dc83d3fb55e0cbbd35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"68edd4dc83d3fb55e0cbbd35"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Partidos",
+			"item": [
+				{
+					"name": "Crear Partido",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"homeTeam\": \"68edd56583d3fb55e0cbbd39\",\r\n  \"awayTeam\": \"68edd812bf128181f2a20a01\",\r\n  \"league\": \"68edd53983d3fb55e0cbbd37\",\r\n  \"date\": \"2025-10-25T20:00:00Z\",\r\n  \"stadium\": \"Estadio Campin\",\r\n  \"status\": \"scheduled\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/matches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"matches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Partidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/matches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"matches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Partido por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/matches/68edd88fbf128181f2a20a05",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"matches",
+								"68edd88fbf128181f2a20a05"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Resultado de Partido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"scoreHome\": 3,\r\n  \"scoreAway\": 1,\r\n  \"status\": \"finished\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/matches/68edd88fbf128181f2a20a05",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"matches",
+								"68edd88fbf128181f2a20a05"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Partidos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Scores",
+			"item": [
+				{
+					"name": "Crear Score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"matchId\": \"68edd88fbf128181f2a20a05\",\r\n  \"teamId\": \"68edd56583d3fb55e0cbbd39\",\r\n  \"goals\": 3\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/scores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"scores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Scores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/scores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"scores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Players",
+			"item": [
+				{
+					"name": "Crear Jugador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Lionel Messi\",\r\n  \"age\": 36,\r\n  \"position\": \"Delantero\",\r\n  \"nationality\": \"Argentina\",\r\n  \"teamId\": \"68edd812bf128181f2a20a01\",\r\n  \"goals\": 10,\r\n  \"assists\": 5\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/players",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Jugadores",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Jugador por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/players/68ede00230877030c6863b84",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players",
+								"68ede00230877030c6863b84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Jugador",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"goals\": 12\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/players/68ede00230877030c6863b84",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players",
+								"68ede00230877030c6863b84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Jugadores",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/players/68ede00230877030c6863b84",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players",
+								"68ede00230877030c6863b84"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Stats",
+			"item": [
+				{
+					"name": "Crear Estadistica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"matchId\": \"68edd88fbf128181f2a20a05\",\r\n  \"teamId\": \"68edd812bf128181f2a20a01\",\r\n  \"possession\": 60,\r\n  \"shots\": 15,\r\n  \"passes\": 420,\r\n  \"fouls\": 8,\r\n  \"corners\": 5,\r\n  \"offsides\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/stats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver estadisticas",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Estadisticas por partido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/stats/match/68edd88fbf128181f2a20a05",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"stats",
+								"match",
+								"68edd88fbf128181f2a20a05"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Historico",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"playerId\": \"68ede00230877030c6863b84\",\r\n  \"matchId\": \"68edd88fbf128181f2a20a05\",\r\n  \"minutesPlayed\": 90,\r\n  \"goals\": 2,\r\n  \"assists\": 1,\r\n  \"yellowCards\": 0,\r\n  \"redCards\": 0,\r\n  \"rating\": 9.2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/history",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Todos los Historicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/history",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Historico de un Jugador",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/history/player/68ede00230877030c6863b84",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"history",
+								"player",
+								"68ede00230877030c6863b84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Historico de un Partido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/history/match/68edd88fbf128181f2a20a05",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"history",
+								"match",
+								"68edd88fbf128181f2a20a05"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoints Usuarios",
+			"item": [
+				{
+					"name": "Crear Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"miguel_admin\",\r\n  \"email\": \"miguel@agencia.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Iniciar Sesión",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"miguel@agencia.com\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Usuarios",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoint General",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
